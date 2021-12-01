@@ -1,4 +1,9 @@
 let containerCell = document.querySelector('.container-cell');
+let button = document.querySelector('.controls  button');
+const select = document.getElementById('level');
+console.log(containerCell);
+console.log(button);
+
 const row = 10;
 const col = 10;
 let numberSquare = row * col;
@@ -11,17 +16,55 @@ function arrayNumber(min, max) {
 }
 
 
+button.addEventListener('click', function() {
 
+    const select = document.getElementById('level');
 
+if( select.value == "easy"){
+    containerCell.innerHTML ='';
 
-const number = arrayNumber( 1, 100)
+    for (let i = 1; i < 101; i++) {
+        const square = document.createElement('div');
+        square.classList.add('cell');
+        square.classList.add('active');
+        square.append(i);
+        containerCell.append(square);
+        
+    }
 
-for (let i = 1; i <= numberSquare; i++) {
-    const square = document.createElement('div');
-    square.classList.add('cell');
-    console.log(square);
-    square.append(i);
-    containerCell.append(square);
+}else if( select.value == "medium"){
+    containerCell.innerHTML ='';
+    for (let i = 1; i < 81; i++) {
+        const square = document.createElement('div');
+        square.classList.add('cell');
+        square.classList.add('active');
+        square.append(i);
+        containerCell.append(square);
+        
+    }
+
+    
+
+}else if( select.value == "hard"){
+    containerCell.innerHTML ='';
+    for (let i = 1; i < 51; i++) {
+        const square = document.createElement('div');
+        square.classList.add('cell');
+        square.classList.add('active');
+        square.append(i);
+        containerCell.append(square);
+            
+    }
+    
 }
+    
+
+    
+})
+
+
+
+
+
 
 
