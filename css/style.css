@@ -64,26 +64,26 @@ button, #level{
     
 }
 
-
-.easy {
+.controls, .easy, .medium, .hard{
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.easy {
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid black;
 }
 
 .medium {
-    justify-content: center;
-    align-items: center;
     width: calc(100% / 9);
     height: calc(100% / 9);
     border: 1px solid black;
 }
 
 .hard {
-    justify-content: center;
-    align-items: center;
     width: calc(100% / 7);
     height: calc(100% / 7);
     border: 1px solid black;
@@ -95,9 +95,9 @@ button, #level{
     display: none;
   }
 
-  .active{
+  /* .active{
     display: flex;  
-  }
+  } */
 
 
   footer{

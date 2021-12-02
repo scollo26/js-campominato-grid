@@ -32,7 +32,6 @@ button.addEventListener('click', function() {
         for (let i = 1; i <= 100; i++) {
             const square = document.createElement('div');
             square.classList.add('easy');
-            square.classList.add('active');
             square.append(i);
             containerCell.append(square);
 
@@ -49,7 +48,6 @@ button.addEventListener('click', function() {
         for (let i = 1; i <= 81; i++) {
             const square = document.createElement('div');
             square.classList.add('medium');
-            square.classList.add('active');
             square.append(i);
             containerCell.append(square);
 
@@ -68,7 +66,6 @@ button.addEventListener('click', function() {
         for (let i = 1; i <= 49; i++) {
             const square = document.createElement('div');
             square.classList.add('hard');
-            square.classList.add('active');
             square.append(i);
             containerCell.append(square);
 
@@ -106,7 +103,7 @@ button.addEventListener('click', function() {
 
 //         for (let i = 1; i <= number; i++) {
 //             const square = document.createElement('div');
-//             square.classList.add(level,'active');
+//             square.classList.add(level);
 //             square.append(i);
 //             containerCell.append(square);
 
