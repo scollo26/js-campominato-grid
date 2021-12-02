@@ -7,16 +7,16 @@ const select = document.getElementById('level');
 console.log(containerCell);
 console.log(button);
 
-const row = 10;
-const col = 10;
-let numberSquare = row * col;
-let maxNumber = numberSquare;
+// const row = 10;
+// const col = 10;
+// let numberSquare = row * col;
+// let maxNumber = numberSquare;
 
 
-function arrayNumber(min, max) {
+// function arrayNumber(min, max) {
     
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
 
 // button
 
@@ -37,7 +37,7 @@ button.addEventListener('click', function() {
 
             // click-cambia-colore-blu
             square.addEventListener('click', function(){
-                square.classList.add('blue');
+                this.classList.add('blue');
             });
         
         }
@@ -53,7 +53,7 @@ button.addEventListener('click', function() {
 
             // click-cambia-colore-blu
             square.addEventListener('click', function(){
-                square.classList.add('blue');
+                this.classList.add('blue');
             });
         
         
@@ -71,7 +71,7 @@ button.addEventListener('click', function() {
 
             // click-cambia-colore-blu
             square.addEventListener('click', function(){
-                square.classList.add('blue');
+                this.classList.add('blue');
             });
         
             
@@ -109,7 +109,7 @@ button.addEventListener('click', function() {
 
 //             // click-cambia-colore-blu
 //             square.addEventListener('click', function(){
-//                 square.classList.add('blue');
+//                 this.classList.add('blue');
 //             });
     
 //         }

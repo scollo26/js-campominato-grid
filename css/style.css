@@ -40,6 +40,7 @@ h1{
 button, #level{
     width: 80px;
     background-color:lightgray;
+    margin: 5px;
 }
 
 .container h2{
@@ -91,9 +92,9 @@ button, #level{
 
 
 
-.none {
+/* .none {
     display: none;
-  }
+  } */
 
   /* .active{
     display: flex;  
